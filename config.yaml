@@ -1,0 +1,11 @@
+deploy_url: https://metpredict.at
+static_url: https://cdn.jsdelivr.net/gh/rendeirolab/metpredict-website@main/assets
+template_dir: templates
+content_dir: content
+build_dir: docs
+pages:
+  index:
+    name: Home
+    url: /
+    template: index.html
+    file: index.html

@@ -1,0 +1,6 @@
+docs/
+.ruff_cache/
+.venv/
+uv.lock
+*.pyc
+__pycache__/
