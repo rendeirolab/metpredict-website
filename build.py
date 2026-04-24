@@ -15,6 +15,7 @@ build_dir.mkdir(exist_ok=True, parents=True)
 
 def main():
     build_index()
+    copy_assets()
 
 
 def build_index():
@@ -38,6 +39,12 @@ def build_index():
 
     with page_file.open("w") as f:
         f.write(html)
+
+
+def copy_assets():
+    if (build_dir / "assets").exists():
+        shutil.rmtree(build_dir / "assets")
+    shutil.copytree("assets", build_dir / "assets")
 
 
 if __name__ == "__main__":
