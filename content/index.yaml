@@ -1,3 +1,47 @@
 index:
-  description: "A WWTF-funded collaboration with Juliane Winkler's lab on prediction of metastatic potential (WWTF LS23-067)."
+  description: "A WWTF-funded collaboration on prediction of metastatic potential."
   title: "MetPredict"
+  intro:
+    - "MetPredict is a WWTF-funded collaboration (LS23-067) between the groups of Juliane Winkler, Andre Rendeiro, and Zsuzsanna Bago-Horvath working on prediction of metastatic potential."
+  labs:
+    - name: "Juliane Winkler"
+      institution: "Medical University of Vienna"
+      url: "https://krebsforschung.meduniwien.ac.at/schwerpunkt/metasierung/juliane-winkler/"
+      role: "Group Leader"
+    - name: "Andre Rendeiro"
+      institution: "CeMM / Rendeiro Group"
+      url: "https://rendeiro.group"
+      role: "Group Leader"
+    - name: "Zsuzsanna Bago-Horvath"
+      institution: "Medical University of Vienna - Pathology"
+      url: "https://ccc.meduniwien.ac.at/bgz/allgemeines/struktur-netzwerk-und-organisation/pathologie/"
+      role: "Group Leader"
+  image:
+    url: "https://placehold.co/800x400/20c997/white?text=MetPredict+Project"
+    alt: "MetPredict project placeholder image"
+  team:
+    - name: "TBD"
+      role: "Principal Investigator"
+      institution: "TBD"
+      image_url: "https://placehold.co/200x200/20c997/white?text=Photo"
+    - name: "TBD"
+      role: "Postdoctoral Researcher"
+      institution: "TBD"
+      image_url: "https://placehold.co/200x200/20c997/white?text=Photo"
+    - name: "TBD"
+      role: "PhD Student"
+      institution: "TBD"
+      image_url: "https://placehold.co/200x200/20c997/white?text=Photo"
+  funding:
+    - name: "WWTF LS23-067"
+      url: "https://wwtf.at/funding/programmes/ls/"
+  institutions:
+    - name: "Center for Cancer Research MUW"
+      url: "https://ccc.meduniwien.ac.at/"
+      logo_placeholder: true
+    - name: "CeMM"
+      url: "https://cemm.at/"
+      logo_placeholder: true
+    - name: "Dept. Pathology MUW"
+      url: "https://ccc.meduniwien.ac.at/bgz/allgemeines/struktur-netzwerk-und-organisation/pathologie/"
+      logo_placeholder: true
