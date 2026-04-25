@@ -1,5 +1,6 @@
 index:
   description: "A WWTF-funded collaboration on prediction of metastatic potential."
+  summary: "MetPredict studies why some breast cancers spread to other organs (metastasis). We use advanced imaging and AI to map tumor cells and their environment, aiming to identify patients at high risk and discover new treatments."
   title: "MetPredict"
   intro:
     - "MetPredict is a WWTF-funded collaboration (LS23-067) between the groups of Juliane Winkler, Andre Rendeiro, and Zsuzsanna Bago-Horvath working on prediction of metastatic potential."
