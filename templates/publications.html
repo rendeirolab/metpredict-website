@@ -1,0 +1,28 @@
+{% extends "_template.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="col-xs-12 col-md-12">
+    <h2>{{ title }}</h2>
+    <p class="lead">{{ description }}</p>
+    <hr />
+</div>
+
+{% for paper in papers %}
+<div class="col-xs-12 col-md-12">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ paper.title }}</h5>
+            <p class="card-text">{{ paper.authors }}</p>
+            <p class="card-text">
+                <em>{{ paper.journal }}</em> ({{ paper.year }}).
+                {% if paper.doi %}
+                <a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener">doi:{{ paper.doi }}</a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
