@@ -40,7 +40,7 @@ news:
         - type: text
           content: "Fatemeh Ahmadi will apply her profound bioinformatics background and study tissue organization of metastasis using spatial omics."
         - type: image
-          url: "https://placehold.co/400x400/20c997/white?text=Fatemeh"
+          url: "https://placehold.co/400x400/20c997/white?text=Fatemeh+Ahmadi"
           alt: "Fatemeh Ahmadi"
           caption: "Fatemeh Ahmadi"
 
@@ -51,6 +51,10 @@ news:
       body:
         - type: text
           content: "Eric Pari from the University of Bologna started his Master's thesis project in the Winkler Lab and will support tissue annotations and anatomical model generation."
+        - type: image
+          url: "https://placehold.co/400x400/20c997/white?text=Eric+Pari"
+          alt: "Eric Pari"
+          caption: "Eric Pari"
 
     - slug: "37th-European-Society-of-Pathology"
       title: "Posters @ the 37th European Society of Pathology"
