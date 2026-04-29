@@ -7,6 +7,7 @@
     <p class="lead">{{ description }}</p>
     <p>{{ summary }}</p>
     <hr />
+    <img src="{{ image.url | asset_url }}" alt="{{ image.alt }}" class="img-fluid rounded" />
 </div>
 
 <div class="col-xs-12 col-md-12">
@@ -35,12 +36,6 @@
 </div>
 
 <div class="col-xs-12 col-md-12">
-    <h2>Project</h2>
-    <img src="{{ image.url | asset_url }}" alt="{{ image.alt }}" class="img-fluid rounded" />
-    <hr />
-</div>
-
-<div class="col-xs-12 col-md-12">
     <h2>Latest News</h2>
     {% for post in posts[:3] %}
     <div class="card mb-3">
@@ -63,7 +58,7 @@
         <div class="col-md-12 mb-3">
             <h5>Funding</h5>
             <a href="{{ funding_logo.url }}" target="_blank">
-                <img src="{{ static_url }}/img/logos/{{ funding_logo.logo }}" alt="{{ funding_logo.name }}" class="partner-logo" style="height: 40px;" />
+                <img src="{{ static_url }}/img/logos/{{ funding_logo.logo }}" alt="{{ funding_logo.name }}" style="height: 40px;" />
             </a>
         </div>
     </div>
