@@ -9,3 +9,8 @@ pages:
     url: /
     template: index.html
     file: index.html
+  news:
+    name: News
+    url: /news/
+    template: news.html
+    file: news/index.html
