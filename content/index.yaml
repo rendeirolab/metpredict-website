@@ -24,8 +24,8 @@ index:
       role: "Group Leader"
       photo: "Szuzsanna.png"
   image:
-    url: "https://placehold.co/800x400/20c997/white?text=MetPredict+Project"
-    alt: "MetPredict project placeholder image"
+    url: "img/multiplexed_imaging.jpg"
+    alt: "Multiplexed imaging of lung tissue with metastasis"
   team:
     - name: "TBD"
       role: "Principal Investigator"
