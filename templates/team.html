@@ -1,0 +1,55 @@
+{% extends "_template.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="col-xs-12 col-md-12">
+    <h2>{{ title }}</h2>
+    <p class="lead">{{ description }}</p>
+    <hr />
+</div>
+
+{% for section_key, section in current.items() %}
+<div class="col-xs-12 col-md-12">
+    <h3>{{ section.lab_name }}</h3>
+    <p class="text-muted mb-3">{{ section.institution }}</p>
+    <div class="row">
+        {% for member in section.members %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ member.name }}</h5>
+                    <p class="card-text text-muted mb-0">{{ member.role }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+
+<div class="col-xs-12 col-md-12 mt-4">
+    <hr />
+    <h2 class="mt-4">Previous Team Members</h2>
+    <hr />
+</div>
+
+{% for section_key, section in previous.items() %}
+<div class="col-xs-12 col-md-12">
+    <h4>{{ section.lab_name }}</h4>
+    <p class="text-muted mb-3">{{ section.institution }}</p>
+    <div class="row">
+        {% for member in section.members %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-secondary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ member.name }}</h5>
+                    <p class="card-text text-muted mb-0">{{ member.role }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
