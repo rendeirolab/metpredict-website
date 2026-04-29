@@ -6,8 +6,7 @@ A simple static placeholder website for MetPredict project.
 ## Development
 
 ```bash
-uv run build.py
-task serve
+uv run task serve
 ```
 
 ## Deploying
