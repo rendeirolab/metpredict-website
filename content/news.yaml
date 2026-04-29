@@ -23,6 +23,14 @@ news:
       body:
         - type: text
           content: "Eva Chrenková from the Winkler Lab presented her work and beautiful multiplexed images at the ENBDC meeting in Weggis, Switzerland from 15. - 18. April 2026. It's such a privilege to see her hard work and dedication to this project get the recognition it deserves. It was a fantastic meeting bringing together the Breast Biology community of Europe! Thanks to the organizers for putting together such an incredible program."
+        - type: image
+          url: "/assets/img/Eva_ENBDC_talk.jpeg"
+          alt: "Eva Chrenková presenting at ENBDC"
+          caption: "Eva Chrenková presenting at ENBDC"
+        - type: image
+          url: "/assets/img/Eva_ENBDC_poster.jpeg"
+          alt: "Eva's ENBDC poster"
+          caption: "Eva's ENBDC poster"
 
     - slug: "fatemeh-joins"
       title: "Fatemeh Ahmadi joins the MetPredict team!"
