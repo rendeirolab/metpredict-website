@@ -1,0 +1,49 @@
+team:
+  title: "Team"
+  description: "The researchers behind MetPredict."
+  current:
+    winkler_lab:
+      lab_name: "Winkler Lab"
+      institution: "Center for Cancer Research, Medical University of Vienna"
+      members:
+        - name: "Juliane Winkler"
+          role: "Group Leader"
+        - name: "Eva Chrenková"
+          role: "Postdoc"
+        - name: "Fatemeh Ahmadi"
+          role: "PhD candidate"
+        - name: "Eric Pari"
+          role: "Master's student"
+        - name: "Stefan Davids"
+          role: "Research Assistant"
+    rendeiro_lab:
+      lab_name: "Rendeiro Lab"
+      institution: "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+      members:
+        - name: "André Rendeiro"
+          role: "Principal Investigator"
+        - name: "Yimin Zhen"
+          role: "Principal Investigator"
+    bago_horvath_lab:
+      lab_name: "Bagó-Horváth Lab"
+      institution: "Clinical Institute of Pathology, Medical University of Vienna"
+      members:
+        - name: "Zsuzsanna Bagó-Horváth"
+          role: "Associated Professor"
+        - name: "Elisabeth Gurnhofer"
+          role: "Research Assistant"
+        - name: "Rebecca Sawodny"
+          role: "Medical Resident"
+        - name: "Ulrike Heber"
+          role: "Pathologist"
+  previous:
+    winkler_lab:
+      lab_name: "Winkler Lab"
+      institution: "Center for Cancer Research, Medical University of Vienna"
+      members:
+        - name: "Myra Almén"
+          role: "Master's student"
+        - name: "Elisabeth Weigert"
+          role: "Master's student"
+        - name: "Patrick Wagner"
+          role: "PhD candidate"
