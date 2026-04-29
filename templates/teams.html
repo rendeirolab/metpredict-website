@@ -27,16 +27,35 @@
         </div>
         {% endfor %}
     </div>
-    <hr />
-</div>
 
-<div class="text-center mt-3 mb-3">
-    <a href="teams">Read more about the teams →</a>
+    <div class="text-center mt-3 mb-3">
+        <a href="teams">Read more about the teams →</a>
+    </div>
+
+    <hr />
 </div>
 
 <div class="col-xs-12 col-md-12">
     <h2>Project</h2>
     <img src="{{ image.url }}" alt="{{ image.alt }}" class="img-fluid rounded" />
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
+    <h2>Team</h2>
+    <div class="row">
+        {% for member in team %}
+        <div class="col-md-4">
+            <div class="team-card text-center">
+                <img src="{{ member.image_url }}" alt="{{ member.name }}" class="rounded-circle mb-3"
+                    style="width: 100px; height: 100px; object-fit: cover;" />
+                <h5>{{ member.name }}</h5>
+                <p class="mb-1">{{ member.role }}</p>
+                <small class="text-muted">{{ member.institution }}</small>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
     <hr />
 </div>
 
