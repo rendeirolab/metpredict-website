@@ -10,15 +10,15 @@ research:
     - title: "Whole-slide imaging and ML-based analysis"
       text: "In MetPredict, we use standard histopathological stainings and whole-slide imaging of tissue sections. This allows us to identify the overall structure of the tissue, the specific microanatomical features of the tissue, and whether certain tissue patterns are linked to metastasis. We combine expert annotations with machine learning-based analysis to teach computational models to recognize important tissue features. The goal is to identify patterns that may not be easily visible by eye but could help predict whether a tumor is more likely to spread. By using this approach, we want to develop tools that can support pathologists and clinicians in recognizing patients at higher risk of metastasis using routine tissue images."
       images:
-        - placeholder: "annotation-example"
+        - url: "img/annotation_example.png"
           alt: "Annotation example"
         - placeholder: "prediction-picture"
           alt: "ML-based prediction picture"
     - title: "Multiplexed imaging"
       text: "Capturing spatial organization of tissue is crucial to study metastasis. The tissue is composed of diverse normal cells, tumor cells and extracellular matrix. To understand the differences between primary tumors and metastasis, we are leveraging the multiplexed imaging method (MACSima), which allows us to look at many cell markers in the same tissue sample. Through repeated antibody labeling cycles, it allows high-dimensional protein profiling at single-cell resolution while maintaining intact tissue morphology. The resulting datasets can be integrated with advanced image segmentation and spatial analysis pipelines to quantify cell phenotypes, cell–cell interactions, and niche composition. This allows us to create a detailed map of the tumor, showing tumor cells, immune cells, support cells, and the surrounding tissue structure. By studying these maps, we can better understand how cancer cells spread and how their environment supports this process."
       images:
-        - placeholder: "macsima-workflow"
+        - url: "img/macsima_workflow.png"
           alt: "MACSima workflow picture"
-        - placeholder: "if-picture-lung-metastasis"
+        - url: "img/if_lung_metastasis_example.png"
           alt: "IF picture - lung metastasis example"
       legend: "Multiplexed imaging of lung tissue with metastasis stained with markers: vimentin (blue), E-cadherin (pink), actin (green), and DAPI (white). A: centre of macrometastasis showing majority of E-cadherin+ cells B: margin of macrometastasis showing individual vimentin+ cells C: micrometastasis showing majority of vimentin+ cells D: vimentin+ tumor cell in blood vessel (scale 40 µm)."

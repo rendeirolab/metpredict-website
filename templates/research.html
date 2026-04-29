@@ -33,7 +33,11 @@
         <div class="row mt-3 mb-2">
             {% for img in method.images %}
             <div class="col-md-6 mb-3">
+                {% if img.url %}
+                <img src="{{ img.url | asset_url }}" alt="{{ img.alt }}" class="img-fluid rounded" />
+                {% else %}
                 <img src="https://placehold.co/600x400/20c997/white?text={{ img.placeholder }}" alt="{{ img.alt }}" class="img-fluid rounded" />
+                {% endif %}
             </div>
             {% endfor %}
         </div>
