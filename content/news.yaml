@@ -16,9 +16,57 @@ news:
         - type: text
           content: "Stay tuned for upcoming news about our research progress, team updates, and collaborative milestones. We look forward to sharing our journey with you."
 
+    - slug: "eva-enbdc-2026"
+      title: "Eva presents at ENBDC"
+      date: "2026-04-19"
+      summary: "Eva Chrenková presented her work and multiplexed images at the ENBDC meeting in Weggis, Switzerland."
+      body:
+        - type: text
+          content: "Eva Chrenková from the Winkler Lab presented her work and beautiful multiplexed images at the ENBDC meeting in Weggis, Switzerland from 15. - 18. April 2026. It's such a privilege to see her hard work and dedication to this project get the recognition it deserves. It was a fantastic meeting bringing together the Breast Biology community of Europe! Thanks to the organizers for putting together such an incredible program."
+
+    - slug: "fatemeh-joins"
+      title: "Fatemeh Ahmadi joins the MetPredict team!"
+      date: "2026-04-01"
+      summary: "Fatemeh Ahmadi will apply her bioinformatics background to study tissue organization of metastasis using spatial omics."
+      body:
+        - type: text
+          content: "Fatemeh Ahmadi will apply her profound bioinformatics background and study tissue organization of metastasis using spatial omics."
+        - type: image
+          url: "https://placehold.co/400x400/20c997/white?text=Fatemeh"
+          alt: "Fatemeh Ahmadi"
+          caption: "Fatemeh Ahmadi"
+
+    - slug: "eric-joins"
+      title: "Eric Pari joins the MetPredict team!"
+      date: "2026-03-01"
+      summary: "Eric Pari started his Master's thesis project in the Winkler Lab."
+      body:
+        - type: text
+          content: "Eric Pari from the University of Bologna started his Master's thesis project in the Winkler Lab and will support tissue annotations and anatomical model generation."
+
+    - slug: "37th-European-Society-of-Pathology"
+      title: "Posters @ the 37th European Society of Pathology"
+      date: "2025-09-10"
+      summary: "Yimin presented two posters on LazySlide and the WWTF-funded breast cancer metastasis collaboration."
+      body:
+        - type: image
+          url: "/assets/img/37th-ecp.png"
+          caption: "37th European Congress of Pathology"
+          alt: "ECP conference"
+        - type: text
+          content: "The MetPredict team is excited to present our latest research findings at the 37th European Society of Pathology conference. This event will provide an excellent opportunity to share our work with the broader scientific community and engage in discussions about the future of metastatic potential prediction."
+        - type: text
+          content: "Yimin had an e-poster on LazySlide, our lab's framework for whole slide image analysis. He also presented a poster on our collaboration with Juliane Winkler funded by the Vienna Science and Technology foundation (WWTF) on breast cancer metastasis."
+        - type: image
+          url: "/assets/img/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
+          alt: "Yimin Zheng presenting at ECP"
+          caption: "Yimin Zheng presenting at ECP."
+        - type: text
+          content: "Congratulations to Yimin and thank you to the organizers for selecting our work!"
+
     - slug: "wwtf-funding-awarded"
       title: "WWTF funding awarded to MetPredict"
-      date: "2026-03-15"
+      date: "2023-03-01"
       summary: "The MetPredict consortium has been awarded funding through WWTF LS23-067."
       body:
         - type: text
@@ -29,23 +77,3 @@ news:
           caption: "WWTF Life Sciences programme supports MetPredict."
         - type: text
           content: "The project brings together expertise in tumor biology, computational pathology, and clinical diagnostics from three research groups at the Medical University of Vienna and CeMM. More details on our research aims and team will follow soon."
-
-    - slug: "37th-European-Society-of-Pathology"
-      title: "Posters @ the 37th European Society of Pathology"
-      date: "2025-09-10"
-      summary: "MetPredict team presents findings at the annual conference."
-      body:
-        - type: image
-          url: "/assets/img/37th-ecp.png"
-          caption: "37th European Congress of Pathology"
-          alt: "ECP conference"
-        - type: text
-          content: "The MetPredict team is excited to present our latest research findings at the 37th European Society of Pathology conference. 
-                    This event will provide an excellent opportunity to share our work with the broader scientific community and engage in discussions 
-                    about the future of metastatic potential prediction."
-        - type: image
-          url: "/assets/img/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
-          alt: "ECP conference"
-          caption: "Yimin Zheng presenting at ECP."
-        - type: text
-          content: "We look forward to connecting with colleagues and exploring potential collaborations."

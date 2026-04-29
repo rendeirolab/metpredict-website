@@ -9,8 +9,23 @@ pages:
     url: /
     template: index.html
     file: index.html
+  research:
+    name: Research
+    url: /research/
+    template: research.html
+    file: research/index.html
+  team:
+    name: Team
+    url: /team/
+    template: team.html
+    file: team/index.html
   news:
     name: News
     url: /news/
     template: news.html
     file: news/index.html
+  publications:
+    name: Publications
+    url: /publications/
+    template: publications.html
+    file: publications/index.html

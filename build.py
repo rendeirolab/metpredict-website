@@ -40,6 +40,12 @@ def build_page(page_key, page_cfg, config, template_dir, content_dir, build_dir)
     content_file = content_dir / f"{page_key}.yaml"
     content = yaml.safe_load(content_file.open().read())[page_key]
 
+    # Inject latest news posts into index page
+    if page_key == "index":
+        news_file = content_dir / "news.yaml"
+        news_data = yaml.safe_load(news_file.open().read())["news"]
+        content["posts"] = sorted(news_data["posts"], key=lambda p: p.get("date", ""), reverse=True)
+
     # Sort news posts by date, newest first
     if "posts" in content:
         content["posts"] = sorted(content["posts"], key=lambda p: p.get("date", ""), reverse=True)

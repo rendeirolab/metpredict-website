@@ -41,6 +41,23 @@
 </div>
 
 <div class="col-xs-12 col-md-12">
+    <h2>Latest News</h2>
+    {% for post in posts[:3] %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title"><a href="/news/{{ post.slug }}/" class="text-decoration-none">{{ post.title }}</a></h5>
+            <small class="text-muted">{{ post.date }}</small>
+            <p class="card-text mt-2">{{ post.summary }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="text-center mt-2">
+        <a href="/news/">See all news →</a>
+    </div>
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
     <h2>Funding & Institutions</h2>
     <div class="row">
         <div class="col-md-12 mb-3">
