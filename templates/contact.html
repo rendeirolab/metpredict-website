@@ -1,0 +1,49 @@
+{% extends "_template.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="col-xs-12 col-md-12">
+    <h2>{{ title }}</h2>
+    <p class="lead">{{ description }}</p>
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
+    <h3>General Contact</h3>
+    <p>For general inquiries about the MetPredict project, please contact:</p>
+    <div class="card mb-4" style="max-width: 400px;">
+        <div class="card-body">
+            <h5 class="card-title">{{ general_contact.name }}</h5>
+            <p class="card-text">
+                <i class="bi bi-envelope me-2"></i>
+                <a href="mailto:{{ general_contact.email }}">{{ general_contact.email }}</a>
+            </p>
+        </div>
+    </div>
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
+    <h3>Institutions</h3>
+    <div class="row">
+        {% for inst in institutions %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {% if inst.url %}
+                        <a href="{{ inst.url }}" target="_blank">{{ inst.name }}</a>
+                        {% else %}
+                        {{ inst.name }}
+                        {% endif %}
+                    </h5>
+                    <p class="card-text text-muted">{{ inst.subtitle }}</p>
+                    <p class="card-text small">{{ inst.address }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

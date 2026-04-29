@@ -29,3 +29,8 @@ pages:
     url: /publications/
     template: publications.html
     file: publications/index.html
+  contact:
+    name: Contact
+    url: /contact/
+    template: contact.html
+    file: contact/index.html
