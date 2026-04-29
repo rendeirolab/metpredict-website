@@ -58,7 +58,7 @@
         <div class="col-md-12 mb-3">
             <h5>Funding</h5>
             <a href="{{ funding_logo.url }}" target="_blank">
-                <img src="{{ static_url }}/img/logos/{{ funding_logo.logo }}" alt="{{ funding_logo.name }}" style="height: 40px;" />
+                <img src="{{ static_url }}/img/logos/{{ funding_logo.logo }}" alt="{{ funding_logo.name }}" class="funding-logo" style="height: 80px;" />
             </a>
         </div>
     </div>
@@ -66,7 +66,7 @@
         {% for inst in institutions %}
         <div class="col-md-4">
             <a href="{{ inst.url }}" target="_blank">
-                <img src="{{ static_url }}/img/logos/{{ inst.logo }}" alt="{{ inst.name }}" class="partner-logo" style="max-height: 60px; max-width: 100%;" />
+                <img src="{{ static_url }}/img/logos/{{ inst.logo }}" alt="{{ inst.name }}" style="max-height: 60px; max-width: 100%;" />
                 {% if inst.label %}
                 <div class="institution-label">{{ inst.label }}</div>
                 {% endif %}
