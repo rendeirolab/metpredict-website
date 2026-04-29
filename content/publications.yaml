@@ -1,0 +1,14 @@
+publications:
+  title: "Publications"
+  description: "Peer-reviewed publications from the MetPredict project."
+  papers:
+    - authors: "Daphne A Superville, Eva Chrenková, Yimin Zheng, Alexis J. Combes, Iros Barozzi, Zena Werb, André F. Rendeiro, Christopher S. McGinnis, Andrei Goga, Juliane Winkler"
+      title: "Tumor Heterogeneity Induces Pro- and Anti-metastatic Myeloid Cell Phenotypes in Breast Cancer Lung Metastasis"
+      journal: "BioRxiv"
+      year: "2026"
+      doi: "10.64898/2026.03.27.714678"
+    - authors: "Yimin Zheng, Ernesto Abila, Eva Chrenková, Iva Buljan, Juliane Winkler, André F. Rendeiro"
+      title: "LazySlide: accessible and interoperable whole slide image analysis"
+      journal: "Nature Methods"
+      year: "2026"
+      doi: "10.1038/s41592-026-03044-7"
