@@ -12,8 +12,6 @@ research:
       images:
         - url: "img/annotation_example.png"
           alt: "Annotation example"
-        - placeholder: "prediction-picture"
-          alt: "ML-based prediction picture"
     - title: "Multiplexed imaging"
       text: "Capturing spatial organization of tissue is crucial to study metastasis. The tissue is composed of diverse normal cells, tumor cells and extracellular matrix. To understand the differences between primary tumors and metastasis, we are leveraging the multiplexed imaging method (MACSima), which allows us to look at many cell markers in the same tissue sample. Through repeated antibody labeling cycles, it allows high-dimensional protein profiling at single-cell resolution while maintaining intact tissue morphology. The resulting datasets can be integrated with advanced image segmentation and spatial analysis pipelines to quantify cell phenotypes, cell–cell interactions, and niche composition. This allows us to create a detailed map of the tumor, showing tumor cells, immune cells, support cells, and the surrounding tissue structure. By studying these maps, we can better understand how cancer cells spread and how their environment supports this process."
       images:

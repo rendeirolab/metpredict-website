@@ -10,7 +10,7 @@ news:
         - type: text
           content: "We are excited to announce the launch of the MetPredict project website. This platform will serve as the central hub for sharing updates, publications, and resources from our research on metastatic potential prediction."
         - type: image
-          url: "https://placehold.co/800x400/20c997/white?text=Website+Launch"
+          url: "https://placehold.co/400x200/20c997/white?text=Website+Launch"
           alt: "MetPredict website launch"
           caption: "The new MetPredict project website."
         - type: text
@@ -40,7 +40,7 @@ news:
         - type: text
           content: "Fatemeh Ahmadi will apply her profound bioinformatics background and study tissue organization of metastasis using spatial omics."
         - type: image
-          url: "https://placehold.co/400x400/20c997/white?text=Fatemeh+Ahmadi"
+          url: "https://placehold.co/400x200/20c997/white?text=Fatemeh+Ahmadi"
           alt: "Fatemeh Ahmadi"
           caption: "Fatemeh Ahmadi"
 
@@ -52,7 +52,7 @@ news:
         - type: text
           content: "Eric Pari from the University of Bologna started his Master's thesis project in the Winkler Lab and will support tissue annotations and anatomical model generation."
         - type: image
-          url: "https://placehold.co/400x400/20c997/white?text=Eric+Pari"
+          url: "https://placehold.co/400x200/20c997/white?text=Eric+Pari"
           alt: "Eric Pari"
           caption: "Eric Pari"
 
@@ -84,7 +84,7 @@ news:
         - type: text
           content: "We are pleased to announce that the Vienna Science and Technology Fund (WWTF) has awarded funding to the MetPredict consortium under the Life Sciences programme (LS23-067). This grant will support our interdisciplinary research into predicting metastatic potential in breast cancer."
         - type: image
-          url: "https://placehold.co/800x400/20c997/white?text=WWTF+Funding"
+          url: "https://placehold.co/400x200/20c997/white?text=WWTF+Funding"
           alt: "WWTF funding announcement"
           caption: "WWTF Life Sciences programme supports MetPredict."
         - type: text
