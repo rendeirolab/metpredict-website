@@ -56,3 +56,16 @@ a:hover {
 [data-bs-theme="dark"] .partner-logo {
     filter: brightness(0) invert(1);
 }
+.institution-label {
+    font-family: "Tinos", "Times New Roman", Times, serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+    margin-top: 2px;
+}
+a:hover .institution-label {
+    text-decoration: none;
+}
