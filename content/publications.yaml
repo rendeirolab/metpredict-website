@@ -1,6 +1,6 @@
 publications:
   title: "Publications"
-  description: "Peer-reviewed publications from the MetPredict project."
+  description: "Publications from the MetPredict project."
   papers:
     - authors: "Daphne A Superville, Eva Chrenková, Yimin Zheng, Alexis J. Combes, Iros Barozzi, Zena Werb, André F. Rendeiro, Christopher S. McGinnis, Andrei Goga, Juliane Winkler"
       title: "Tumor Heterogeneity Induces Pro- and Anti-metastatic Myeloid Cell Phenotypes in Breast Cancer Lung Metastasis"
