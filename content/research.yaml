@@ -1,0 +1,24 @@
+research:
+  title: "Research"
+  description: "Understanding and predicting metastatic progression in breast cancer."
+  overview: "The vast majority of cancer patients die from metastasis, which is the spread of tumor cells to different sites in the body. While patients with breast cancer have effective treatment options available, about 30% of patients will eventually develop metastasis. Our project MetPredict studies why some breast cancers spread to other organs, while others don't. We hypothesize that the tissue microenvironment and the anatomical arrangements in the metastatic niche play a crucial role in the establishment of clinical manifested metastasis. In this project, we aim to identify cellular and tissue-level features that predict metastatic progression. By integrating histopathology, spatial profiling, high-dimensional imaging, and AI/machine learning-based analysis, the project will map how tumor cells interact with immune, stromal, and extracellular matrix components of the microenvironment during metastasis. This cutting-edge approach seeks to discover predictive biomarkers, identify patients at high risk and discover new ways to prevent or treat metastasis."
+  questions:
+    - "Is tissue architecture shaped by metastatic cells and their interactions?"
+    - "Can tissue-level features serve as predictors of metastasis?"
+    - "How can we modulate tissue architecture to interfere with metastatic progression?"
+  methods:
+    - title: "Whole-slide imaging and ML-based analysis"
+      text: "In MetPredict, we use standard histopathological stainings and whole-slide imaging of tissue sections. This allows us to identify the overall structure of the tissue, the specific microanatomical features of the tissue, and whether certain tissue patterns are linked to metastasis. We combine expert annotations with machine learning-based analysis to teach computational models to recognize important tissue features. The goal is to identify patterns that may not be easily visible by eye but could help predict whether a tumor is more likely to spread. By using this approach, we want to develop tools that can support pathologists and clinicians in recognizing patients at higher risk of metastasis using routine tissue images."
+      images:
+        - placeholder: "annotation-example"
+          alt: "Annotation example"
+        - placeholder: "prediction-picture"
+          alt: "ML-based prediction picture"
+    - title: "Multiplexed imaging"
+      text: "Capturing spatial organization of tissue is crucial to study metastasis. The tissue is composed of diverse normal cells, tumor cells and extracellular matrix. To understand the differences between primary tumors and metastasis, we are leveraging the multiplexed imaging method (MACSima), which allows us to look at many cell markers in the same tissue sample. Through repeated antibody labeling cycles, it allows high-dimensional protein profiling at single-cell resolution while maintaining intact tissue morphology. The resulting datasets can be integrated with advanced image segmentation and spatial analysis pipelines to quantify cell phenotypes, cell–cell interactions, and niche composition. This allows us to create a detailed map of the tumor, showing tumor cells, immune cells, support cells, and the surrounding tissue structure. By studying these maps, we can better understand how cancer cells spread and how their environment supports this process."
+      images:
+        - placeholder: "macsima-workflow"
+          alt: "MACSima workflow picture"
+        - placeholder: "if-picture-lung-metastasis"
+          alt: "IF picture - lung metastasis example"
+      legend: "Multiplexed imaging of lung tissue with metastasis stained with markers: vimentin (blue), E-cadherin (pink), actin (green), and DAPI (white). A: centre of macrometastasis showing majority of E-cadherin+ cells B: margin of macrometastasis showing individual vimentin+ cells C: micrometastasis showing majority of vimentin+ cells D: vimentin+ tumor cell in blood vessel (scale 40 µm)."
