@@ -1,0 +1,48 @@
+{% extends "_template.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="col-xs-12 col-md-12">
+    <h2>{{ title }}</h2>
+    <p class="lead">{{ description }}</p>
+    <p>{{ overview }}</p>
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
+    <h3>Research Questions</h3>
+    <p>There are three main questions MetPredict aims to answer:</p>
+    <ul>
+        {% for q in questions %}
+        <li><strong>{{ q }}</strong></li>
+        {% endfor %}
+    </ul>
+    <hr />
+</div>
+
+<div class="col-xs-12 col-md-12">
+    <h3>Methods</h3>
+
+    {% for method in methods %}
+    <div class="mt-4">
+        <h4>{{ method.title }}</h4>
+        <p>{{ method.text }}</p>
+
+        {% if method.images %}
+        <div class="row mt-3 mb-2">
+            {% for img in method.images %}
+            <div class="col-md-6 mb-3">
+                <img src="https://placehold.co/600x400/20c997/white?text={{ img.placeholder }}" alt="{{ img.alt }}" class="img-fluid rounded" />
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if method.legend %}
+        <p class="text-muted fst-italic"><small>Legend: {{ method.legend }}</small></p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
