@@ -49,3 +49,10 @@ a:hover {
     min-height: 80px;
     text-align: center;
 }
+.partner-logo {
+    filter: brightness(0);
+    transition: filter 0.15s ease-in-out;
+}
+[data-bs-theme="dark"] .partner-logo {
+    filter: brightness(0) invert(1);
+}
