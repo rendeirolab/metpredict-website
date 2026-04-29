@@ -36,7 +36,7 @@ news:
       summary: "MetPredict team presents findings at the annual conference."
       body:
         - type: image
-          url: "/assets/images/37th-ecp.png"
+          url: "/assets/img/37th-ecp.png"
           caption: "37th European Congress of Pathology"
           alt: "ECP conference"
         - type: text
@@ -44,7 +44,7 @@ news:
                     This event will provide an excellent opportunity to share our work with the broader scientific community and engage in discussions 
                     about the future of metastatic potential prediction."
         - type: image
-          url: "/assets/images/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
+          url: "/assets/img/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
           alt: "ECP conference"
           caption: "Yimin Zheng presenting at ECP."
         - type: text

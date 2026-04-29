@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <div class="card mb-3">
                 <div class="card-body text-center">
-                    <img src="assets/img/{{ lab.photo }}" alt="{{ lab.name }}"
+                    <img src="{{ static_url }}/img/{{ lab.photo }}" alt="{{ lab.name }}"
                         style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 12px;">
                     <h5 class="card-title"><a href="{{ lab.url }}" target="_blank">{{ lab.name }}</a></h5>
                     <p class="card-text" style="margin-bottom: 0;">{{ lab.institution }}</p>
