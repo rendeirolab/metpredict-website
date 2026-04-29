@@ -1,0 +1,51 @@
+news:
+  title: "News"
+  description: "Latest updates from the MetPredict project."
+  posts:
+    - slug: "website-launched"
+      title: "MetPredict website launched"
+      date: "2026-04-29"
+      summary: "The MetPredict project website is now live."
+      body:
+        - type: text
+          content: "We are excited to announce the launch of the MetPredict project website. This platform will serve as the central hub for sharing updates, publications, and resources from our research on metastatic potential prediction."
+        - type: image
+          url: "https://placehold.co/800x400/20c997/white?text=Website+Launch"
+          alt: "MetPredict website launch"
+          caption: "The new MetPredict project website."
+        - type: text
+          content: "Stay tuned for upcoming news about our research progress, team updates, and collaborative milestones. We look forward to sharing our journey with you."
+
+    - slug: "wwtf-funding-awarded"
+      title: "WWTF funding awarded to MetPredict"
+      date: "2026-03-15"
+      summary: "The MetPredict consortium has been awarded funding through WWTF LS23-067."
+      body:
+        - type: text
+          content: "We are pleased to announce that the Vienna Science and Technology Fund (WWTF) has awarded funding to the MetPredict consortium under the Life Sciences programme (LS23-067). This grant will support our interdisciplinary research into predicting metastatic potential in breast cancer."
+        - type: image
+          url: "https://placehold.co/800x400/20c997/white?text=WWTF+Funding"
+          alt: "WWTF funding announcement"
+          caption: "WWTF Life Sciences programme supports MetPredict."
+        - type: text
+          content: "The project brings together expertise in tumor biology, computational pathology, and clinical diagnostics from three research groups at the Medical University of Vienna and CeMM. More details on our research aims and team will follow soon."
+
+    - slug: "37th-European-Society-of-Pathology"
+      title: "Posters @ the 37th European Society of Pathology"
+      date: "2025-09-10"
+      summary: "MetPredict team presents findings at the annual conference."
+      body:
+        - type: image
+          url: "/assets/images/37th-ecp.png"
+          caption: "37th European Congress of Pathology"
+          alt: "ECP conference"
+        - type: text
+          content: "The MetPredict team is excited to present our latest research findings at the 37th European Society of Pathology conference. 
+                    This event will provide an excellent opportunity to share our work with the broader scientific community and engage in discussions 
+                    about the future of metastatic potential prediction."
+        - type: image
+          url: "/assets/images/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
+          alt: "ECP conference"
+          caption: "Yimin Zheng presenting at ECP."
+        - type: text
+          content: "We look forward to connecting with colleagues and exploring potential collaborations."

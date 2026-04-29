@@ -20,32 +20,68 @@ def build(config=None):
     build_dir = Path(config["build_dir"])
     build_dir.mkdir(exist_ok=True, parents=True)
 
-    build_index(config, template_dir, content_dir, build_dir)
+    for page_key, page_cfg in config["pages"].items():
+        build_page(page_key, page_cfg, config, template_dir, content_dir, build_dir)
+
+    build_news_posts(config, template_dir, content_dir, build_dir)
     copy_assets(build_dir)
     print("Build complete.")
 
 
-def build_index(config, template_dir, content_dir, build_dir):
-    environment = Environment(loader=FileSystemLoader(template_dir))
+def make_environment(template_dir):
+    env = Environment(loader=FileSystemLoader(template_dir))
+    env.filters["asset_url"] = lambda url: url if url.startswith(("http://", "https://", "/")) else f"/{url}"
+    return env
 
-    content_file = content_dir / "index.yaml"
-    content = yaml.safe_load(content_file.open().read())["index"]
 
-    page_file = build_dir / config["pages"]["index"]["file"]
+def build_page(page_key, page_cfg, config, template_dir, content_dir, build_dir):
+    environment = make_environment(template_dir)
+
+    content_file = content_dir / f"{page_key}.yaml"
+    content = yaml.safe_load(content_file.open().read())[page_key]
+
+    # Sort news posts by date, newest first
+    if "posts" in content:
+        content["posts"] = sorted(content["posts"], key=lambda p: p.get("date", ""), reverse=True)
+
+    page_file = build_dir / page_cfg["file"]
     page_file.parent.mkdir(exist_ok=True, parents=True)
 
     page_template = environment.from_string(
-        (template_dir / config["pages"]["index"]["template"]).open().read()
+        (template_dir / page_cfg["template"]).open().read()
     )
 
     html = page_template.render(
-        page_url=config["deploy_url"] + config["pages"]["index"]["url"],
+        page_url=config["deploy_url"] + page_cfg["url"],
         **config,
         **content,
     )
 
     with page_file.open("w") as f:
         f.write(html)
+
+
+def build_news_posts(config, template_dir, content_dir, build_dir):
+    environment = make_environment(template_dir)
+    content_file = content_dir / "news.yaml"
+    news_content = yaml.safe_load(content_file.open().read())["news"]
+
+    post_template = environment.from_string(
+        (template_dir / "news_post.html").open().read()
+    )
+
+    for post in news_content["posts"]:
+        post_dir = build_dir / "news" / post["slug"]
+        post_dir.mkdir(exist_ok=True, parents=True)
+
+        html = post_template.render(
+            page_url=config["deploy_url"] + f"/news/{post['slug']}/",
+            **config,
+            **post,
+        )
+
+        with (post_dir / "index.html").open("w") as f:
+            f.write(html)
 
 
 def copy_assets(build_dir):
