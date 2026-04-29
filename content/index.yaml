@@ -45,10 +45,14 @@ index:
   institutions:
     - name: "Center for Cancer Research MUW"
       url: "https://ccc.meduniwien.ac.at/"
-      logo_placeholder: true
+      logo: "meduni-wien.svg"
     - name: "CeMM"
       url: "https://cemm.at/"
-      logo_placeholder: true
+      logo: "cemm.svg"
     - name: "Dept. Pathology MUW"
       url: "https://ccc.meduniwien.ac.at/bgz/allgemeines/struktur-netzwerk-und-organisation/pathologie/"
-      logo_placeholder: true
+      logo: "meduni-wien.svg"
+  funding_logo:
+    name: "WWTF"
+    url: "https://wwtf.at/"
+    logo: "wwtf.svg"
