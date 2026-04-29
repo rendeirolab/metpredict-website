@@ -1,0 +1,19 @@
+contact:
+  title: "Contact"
+  description: "Get in touch with the MetPredict project."
+  general_contact:
+    name: "Juliane Winkler"
+    email: "juliane.winkler@meduniwien.ac.at"
+  institutions:
+    - name: "Center for Cancer Research"
+      subtitle: "Medical University of Vienna"
+      address: "Borschkegasse 8a, 1090 Vienna, Austria"
+      url: "https://ccc.meduniwien.ac.at/"
+    - name: "CeMM"
+      subtitle: "Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+      address: "Lazarettgasse 14, 1090 Vienna, Austria"
+      url: "https://cemm.at/"
+    - name: "Clinical Institute of Pathology"
+      subtitle: "Medical University of Vienna"
+      address: "Währinger Gürtel 18-20, 1090 Vienna, Austria"
+      url: "https://ccc.meduniwien.ac.at/bgz/allgemeines/struktur-netzwerk-und-organisation/pathologie/"
