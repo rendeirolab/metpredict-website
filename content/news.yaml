@@ -38,11 +38,11 @@ news:
         - type: text
           content: "Eva Chrenková from the Winkler Lab presented her work and beautiful multiplexed images at the ENBDC meeting in Weggis, Switzerland from 15. - 18. April 2026. It's such a privilege to see her hard work and dedication to this project get the recognition it deserves. It was a fantastic meeting bringing together the Breast Biology community of Europe! Thanks to the organizers for putting together such an incredible program."
         - type: image
-          url: "/assets/img/Eva_ENBDC_talk.jpeg"
+          url: "/assets/img/2026-04-19-enbdc_eva_talk.jpeg"
           alt: "Eva Chrenková presenting at ENBDC"
           caption: "Eva Chrenková presenting at ENBDC"
         - type: image
-          url: "/assets/img/Eva_ENBDC_poster.jpeg"
+          url: "/assets/img/2026-04-19-enbdc_eva_poster.jpeg"
           alt: "Eva's ENBDC poster"
           caption: "Eva's ENBDC poster"
 
@@ -76,7 +76,7 @@ news:
       summary: "Yimin presented two posters on LazySlide and the WWTF-funded breast cancer metastasis collaboration."
       body:
         - type: image
-          url: "/assets/img/37th-ecp.png"
+          url: "/assets/img/2025-09-10-ecp_conference.png"
           caption: "37th European Congress of Pathology"
           alt: "ECP conference"
         - type: text
@@ -84,7 +84,7 @@ news:
         - type: text
           content: "Yimin had an e-poster on LazySlide, our lab's framework for whole slide image analysis. He also presented a poster on our collaboration with Juliane Winkler funded by the Vienna Science and Technology foundation (WWTF) on breast cancer metastasis."
         - type: image
-          url: "/assets/img/Yimin_MetPredict_Poster@Pathology_Conference_2025.PNG"
+          url: "/assets/img/2025-09-10-ecp_yimin_poster.png"
           alt: "Yimin Zheng presenting at ECP"
           caption: "Yimin Zheng presenting at ECP."
         - type: text
