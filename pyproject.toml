@@ -18,6 +18,10 @@ classifiers = [
 urls = { Homepage = "https://metpredict.at/" }
 authors = [
     { name = "Andre Rendeiro", email = "arendeiro@cemm.oeaw.ac.at" },
+    { name = "Juliane Winkler", email = "juliane.winkler@meduniwien.ac.at" },
+    { name = "Yimin Zheng", email = "yzheng@cemm.oeaw.ac.at" },
+    { name = "Eva Chrenková", email = "eva.chrenkova@meduniwien.ac.at" },
+    { name = "Fatemeh Ahmadi", email = "fatemeh.ahmadi@meduniwien.ac.at" },
 ]
 
 [tool.taskipy.tasks]
