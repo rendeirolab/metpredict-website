@@ -1,14 +1,19 @@
-MetPredict Website
-================
+# MetPredict Website
 
-A simple static placeholder website for MetPredict project.
+Static website for the [MetPredict project](https://metpredict.at/) — a WWTF-funded collaboration on prediction of metastatic potential.
+
+Live at **[metpredict.at](https://metpredict.at/)**.
 
 ## Development
 
 ```bash
-uv run task serve
+uv sync
+uv run task serve     # dev server with live reload
+uv run task build     # build static site to docs/
 ```
+
+Content is managed via YAML files in `content/`. Templates use Jinja2.
 
 ## Deploying
 
-Push to main branch. GitHub Pages serves from `docs/` folder.
+Push to `main`. GitHub Pages serves from `docs/`.
