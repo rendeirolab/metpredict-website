@@ -2,6 +2,20 @@ news:
   title: "News"
   description: "Latest updates from the MetPredict project."
   posts:
+    - slug: "metpredict-eacr-2026"
+      title: "METPredict research presented at EACR 2026"
+      date: "2026-06-10"
+      summary: "Juliane Winkler and Eva Chrenková presented two posters on metastasis research at EACR 2026 in Budapest."
+      body:
+        - type: text
+          content: "Juliane Winkler and Eva Chrenková represented the METPredict team at the EACR 2026 Congress, held from 8–11 June 2026 in Budapest, Hungary, where they presented two posters on our ongoing research. The posters highlighted recent progress in the spatial and functional profiling of metastasis, focusing on cancer cell plasticity and the tumor microenvironment."
+        - type: image
+          url: "/assets/img/2026-06-10-eacr2026_eva.jpg"
+          alt: "Eva Chrenková at EACR 2026"
+          caption: "Eva Chrenková presenting at EACR 2026."
+        - type: text
+          content: "EACR 2026 offered an amazing platform to share our findings with the international cancer research community and to discuss future directions for metastasis research within the METPredict project."
+
     - slug: "website-launched"
       title: "MetPredict website launched"
       date: "2026-04-29"
