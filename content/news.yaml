@@ -2,6 +2,30 @@ news:
   title: "News"
   description: "Latest updates from the MetPredict project."
   posts:
+    - slug: "metpredict-wwtf-ai-workshop-2026"
+      title: "METPredict presented at the WWTF AI/ML grantee workshop"
+      date: "2026-10-06"
+      summary: "Juliane Winkler presented METPredict at the WWTF \"Understanding biology with AI/ML\" grantee workshop in Vienna."
+      body:
+        - type: text
+          content: "The METPredict team took part in the workshop for grantees of the WWTF \"Understanding biology with AI/ML\" call, held at the Impact Hub Vienna. The workshop marks the midpoint of the four-year METPredict project. Juliane Winkler presented METPredict and our goal of discovering the cellular and microanatomical determinants of breast cancer metastasis across scales, from single cells to whole tissues."
+        - type: image
+          url: "/assets/img/2026-10-06-wwtf_ai_workshop_juliane_talk.webp"
+          alt: "Juliane Winkler presenting the METPredict project in front of screens showing a multiplexed image of breast cancer tissue."
+          caption: "Juliane Winkler presenting METPredict."
+        - type: text
+          content: "Eva Chrenková, Fatemeh Ahmadi, Yimin Zheng and André Rendeiro also joined the workshop, where the funded teams shared their projects, offers and asks. The panel discussions touched on questions at the heart of METPredict: how to make sure that models capture biology rather than technical artefacts of the platform or protocol, and how to build models whose predictions we can trust."
+        - type: image
+          url: "/assets/img/2026-10-06-wwtf_ai_workshop_panel.webp"
+          alt: "Panel of researchers seated in front of a screen showing \"Topic 1 - Biology, not (technical) artefacts: getting clean signal into the model\"."
+          caption: "Panel discussion on getting clean biological signal into models."
+        - type: image
+          url: "/assets/img/2026-10-06-wwtf_ai_workshop_room.webp"
+          alt: "Workshop participants seated around tables listening to a panel discussion while notes are taken on a flipchart."
+          caption: "Grantees of the WWTF \"Understanding biology with AI/ML\" call at the Impact Hub Vienna."
+        - type: text
+          content: "These are challenges we face daily when integrating multiplexed imaging, spatial omics and histopathology to predict metastatic potential, and it was great to exchange ideas with other teams working at the interface of AI and biology. Thank you to the WWTF for organizing it!"
+
     - slug: "metpredict-eacr-2026"
       title: "METPredict research presented at EACR 2026"
       date: "2026-06-10"
