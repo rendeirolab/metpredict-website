@@ -1,6 +1,12 @@
-:root {
-    --bs-primary: #20c997;
-    --bs-primary-rgb: 32, 201, 151;
+:root,
+[data-bs-theme="light"] {
+    /* Darker teal in light mode so text links meet WCAG AA (>= 4.5:1 on white) */
+    --mp-accent: #087f5b;
+    --mp-accent-hover: #0a6b4f;
+}
+[data-bs-theme="dark"] {
+    --mp-accent: #20c997;
+    --mp-accent-hover: #63e6be;
 }
 .text-primary, .btn-primary {
     --bs-primary: #20c997;
@@ -16,20 +22,20 @@
     color: #000;
 }
 a {
-    color: #20c997;
+    color: var(--mp-accent);
 }
 a:hover {
-    color: #1aa179;
+    color: var(--mp-accent-hover);
 }
 .bg-primary {
     background-color: #20c997 !important;
 }
 .page-header h1 a {
-    color: #20c997;
+    color: var(--mp-accent);
     text-decoration: none;
 }
 .page-header h1 a:hover {
-    color: #1aa179;
+    color: var(--mp-accent-hover);
 }
 .team-card {
     background-color: var(--bs-body-bg);
@@ -58,22 +64,27 @@ a:hover {
 }
 .institution-label {
     font-family: "Tinos", "Times New Roman", Times, serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 0.01em;
-    color: inherit;
+    /* Sits inside the white logo chip, so use the MedUni navy in both themes */
+    color: #111d4e;
     text-decoration: none;
-    opacity: 0.7;
     margin-top: 2px;
 }
 a:hover .institution-label {
     text-decoration: none;
 }
-.funding-logo {
-    filter: invert(1);
-    transition: filter 0.15s ease-in-out;
+.logo-chip {
+    display: inline-block;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
 }
-[data-bs-theme="dark"] .funding-logo {
-    filter: none;
+.logo-chip img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

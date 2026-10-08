@@ -7,6 +7,7 @@ import shutil
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
+DEFAULT_OG_IMAGE = "/assets/img/og_default.jpg"
 
 def load_config():
     return yaml.safe_load(Path("config.yaml").open().read())
@@ -25,11 +26,12 @@ def build(config=None):
 
     build_news_posts(config, template_dir, content_dir, build_dir)
     copy_assets(build_dir)
+    build_sitemap(config, content_dir, build_dir)
     print("Build complete.")
 
 
 def make_environment(template_dir):
-    env = Environment(loader=FileSystemLoader(template_dir))
+    env = Environment(loader=FileSystemLoader(template_dir), autoescape=True)
     env.filters["asset_url"] = lambda url: url if url.startswith(("http://", "https://", "/")) else f"/{url}"
     return env
 
@@ -59,6 +61,7 @@ def build_page(page_key, page_cfg, config, template_dir, content_dir, build_dir)
 
     html = page_template.render(
         page_url=config["deploy_url"] + page_cfg["url"],
+        og_image=config["deploy_url"] + DEFAULT_OG_IMAGE,
         **config,
         **content,
     )
@@ -80,8 +83,16 @@ def build_news_posts(config, template_dir, content_dir, build_dir):
         post_dir = build_dir / "news" / post["slug"]
         post_dir.mkdir(exist_ok=True, parents=True)
 
+        # Use the first local image of the post as its social preview image
+        first_image = next(
+            (b["url"] for b in post["body"] if b["type"] == "image" and b["url"].startswith("/")),
+            DEFAULT_OG_IMAGE,
+        )
         html = post_template.render(
             page_url=config["deploy_url"] + f"/news/{post['slug']}/",
+            description=post["summary"],
+            og_type="article",
+            og_image=config["deploy_url"] + first_image,
             **config,
             **post,
         )
@@ -94,6 +105,25 @@ def copy_assets(build_dir):
     if (build_dir / "assets").exists():
         shutil.rmtree(build_dir / "assets")
     shutil.copytree("assets", build_dir / "assets")
+    # Browsers request /favicon.ico regardless of <link rel="icon">
+    shutil.copy("assets/favicon.ico", build_dir / "favicon.ico")
+
+
+def build_sitemap(config, content_dir, build_dir):
+    deploy_url = config["deploy_url"]
+    news_content = yaml.safe_load((content_dir / "news.yaml").open().read())["news"]
+
+    entries = [(deploy_url + page_cfg["url"], None) for page_cfg in config["pages"].values()]
+    entries += [(deploy_url + f"/news/{post['slug']}/", post["date"]) for post in news_content["posts"]]
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, lastmod in entries:
+        lastmod_tag = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+        lines.append(f"  <url><loc>{loc}</loc>{lastmod_tag}</url>")
+    lines.append("</urlset>")
+    (build_dir / "sitemap.xml").write_text("\n".join(lines) + "\n")
+
+    (build_dir / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {deploy_url}/sitemap.xml\n")
 
 
 def serve():

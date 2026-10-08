@@ -2,6 +2,10 @@
 
 {% block title %}{{ title }}{% endblock %}
 
+{% block head %}
+        <meta property="article:published_time" content="{{ date }}" />
+{% endblock %}
+
 {% block content %}
 <div class="col-xs-12 col-md-12">
     <p><a href="/news/">&larr; Back to News</a></p>
@@ -16,7 +20,7 @@
     <p>{{ block.content }}</p>
     {% elif block.type == "image" %}
     <figure class="figure my-3">
-        <img src="{{ block.url | asset_url }}" alt="{{ block.alt }}" class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="{{ block.url | asset_url }}" alt="{{ block.alt }}" class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         {% if block.caption %}
         <figcaption class="figure-caption">{{ block.caption }}</figcaption>
         {% endif %}

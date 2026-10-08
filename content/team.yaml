@@ -23,13 +23,13 @@ team:
         - name: "André Rendeiro"
           role: "Principal Investigator"
         - name: "Yimin Zheng"
-          role: "Principal Investigator"
+          role: "Postdoc"
     bago_horvath_lab:
       lab_name: "Bagó-Horváth Lab"
       institution: "Clinical Institute of Pathology, Medical University of Vienna"
       members:
         - name: "Zsuzsanna Bagó-Horváth"
-          role: "Associated Professor"
+          role: "Associate Professor"
         - name: "Elisabeth Gurnhofer"
           role: "Research Assistant"
         - name: "Rebecca Sawodny"

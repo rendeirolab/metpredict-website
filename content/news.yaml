@@ -3,18 +3,18 @@ news:
   description: "Latest updates from the MetPredict project."
   posts:
     - slug: "metpredict-wwtf-ai-workshop-2026"
-      title: "METPredict presented at the WWTF AI/ML grantee workshop"
+      title: "MetPredict presented at the WWTF AI/ML grantee workshop"
       date: "2026-10-06"
-      summary: "Juliane Winkler presented METPredict at the WWTF \"Understanding biology with AI/ML\" grantee workshop in Vienna."
+      summary: "Juliane Winkler presented MetPredict at the WWTF \"Understanding biology with AI/ML\" grantee workshop in Vienna."
       body:
         - type: text
-          content: "The METPredict team took part in the workshop for grantees of the WWTF \"Understanding biology with AI/ML\" call, held at the Impact Hub Vienna. The workshop marks the midpoint of the four-year METPredict project. Juliane Winkler presented METPredict and our goal of discovering the cellular and microanatomical determinants of breast cancer metastasis across scales, from single cells to whole tissues."
+          content: "The MetPredict team took part in the workshop for grantees of the WWTF \"Understanding biology with AI/ML\" call, held at the Impact Hub Vienna. The workshop marks the midpoint of the four-year MetPredict project. Juliane Winkler presented MetPredict and our goal of discovering the cellular and microanatomical determinants of breast cancer metastasis across scales, from single cells to whole tissues."
         - type: image
           url: "/assets/img/2026-10-06-wwtf_ai_workshop_juliane_talk.webp"
-          alt: "Juliane Winkler presenting the METPredict project in front of screens showing a multiplexed image of breast cancer tissue."
-          caption: "Juliane Winkler presenting METPredict."
+          alt: "Juliane Winkler presenting the MetPredict project in front of screens showing a multiplexed image of breast cancer tissue."
+          caption: "Juliane Winkler presenting MetPredict."
         - type: text
-          content: "Eva Chrenková, Fatemeh Ahmadi, Yimin Zheng and André Rendeiro also joined the workshop, where the funded teams shared their projects, offers and asks. The panel discussions touched on questions at the heart of METPredict: how to make sure that models capture biology rather than technical artefacts of the platform or protocol, and how to build models whose predictions we can trust."
+          content: "Eva Chrenková, Fatemeh Ahmadi, Yimin Zheng and André Rendeiro also joined the workshop, where the funded teams shared their projects, offers and asks. The panel discussions touched on questions at the heart of MetPredict: how to make sure that models capture biology rather than technical artefacts of the platform or protocol, and how to build models whose predictions we can trust."
         - type: image
           url: "/assets/img/2026-10-06-wwtf_ai_workshop_panel.webp"
           alt: "Panel of researchers seated in front of a screen showing \"Topic 1 - Biology, not (technical) artefacts: getting clean signal into the model\"."
@@ -27,18 +27,18 @@ news:
           content: "These are challenges we face daily when integrating multiplexed imaging, spatial omics and histopathology to predict metastatic potential, and it was great to exchange ideas with other teams working at the interface of AI and biology. Thank you to the WWTF for organizing it!"
 
     - slug: "metpredict-eacr-2026"
-      title: "METPredict research presented at EACR 2026"
+      title: "MetPredict research presented at EACR 2026"
       date: "2026-06-10"
       summary: "Juliane Winkler and Eva Chrenková presented two posters on metastasis research at EACR 2026 in Budapest."
       body:
         - type: text
-          content: "Juliane Winkler and Eva Chrenková represented the METPredict team at the EACR 2026 Congress, held from 8–11 June 2026 in Budapest, Hungary, where they presented two posters on our ongoing research. The posters highlighted recent progress in the spatial and functional profiling of metastasis, focusing on cancer cell plasticity and the tumor microenvironment."
+          content: "Juliane Winkler and Eva Chrenková represented the MetPredict team at the EACR 2026 Congress, held from 8–11 June 2026 in Budapest, Hungary, where they presented two posters on our ongoing research. The posters highlighted recent progress in the spatial and functional profiling of metastasis, focusing on cancer cell plasticity and the tumor microenvironment."
         - type: image
           url: "/assets/img/2026-06-10-eacr2026_eva.webp"
           alt: "Eva Chrenková at EACR 2026"
           caption: "Eva Chrenková presenting at EACR 2026."
         - type: text
-          content: "EACR 2026 offered an amazing platform to share our findings with the international cancer research community and to discuss future directions for metastasis research within the METPredict project."
+          content: "EACR 2026 offered an amazing platform to share our findings with the international cancer research community and to discuss future directions for metastasis research within the MetPredict project."
 
     - slug: "website-launched"
       title: "MetPredict website launched"
