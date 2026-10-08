@@ -1,23 +1,47 @@
 
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Eva presents at ENBDC - MetPredict</title>
-        <meta name="description" content="" />
-        <meta name="author" content="André Rendeiro" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eva presents at ENBDC - MetPredict</title>
+        <meta name="description" content="Eva Chrenková presented her work and multiplexed images at the ENBDC meeting in Weggis, Switzerland." />
+        <meta name="author" content="André Rendeiro" />
+        <link rel="canonical" href="https://metpredict.at/news/eva-enbdc-2026/" />
+
+        <meta property="og:site_name" content="MetPredict" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Eva presents at ENBDC" />
+        <meta property="og:description" content="Eva Chrenková presented her work and multiplexed images at the ENBDC meeting in Weggis, Switzerland." />
+        <meta property="og:url" content="https://metpredict.at/news/eva-enbdc-2026/" />
+        <meta property="og:image" content="https://metpredict.at/assets/img/2026-04-19-enbdc_eva_talk.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+        <script>
+            // Set the color theme before first paint to avoid a flash of the wrong theme
+            (() => {
+                let stored = null;
+                try { stored = localStorage.getItem("theme"); } catch (e) {}
+                const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                const theme = stored === "light" || stored === "dark" ? stored : dark ? "dark" : "light";
+                document.documentElement.setAttribute("data-bs-theme", theme);
+            })();
+        </script>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet" />
-        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/rendeirolab/metpredict-website@main/assets/favicon.ico" />
-        <link rel="canonical" href="https://metpredict.at/news/eva-enbdc-2026/" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rendeirolab/metpredict-website@main/assets/css/style.css" />
 
         
+        <meta property="article:published_time" content="2026-04-19" />
+
     </head>
 
     <body>
@@ -53,25 +77,25 @@
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-highlights me-2 navbar-btn"></i>Theme
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme (auto)">
+                                <i class="bi bi-highlights me-2 navbar-btn" aria-hidden="true"></i><span id="bd-theme-text">Theme</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                                        <i class="bi bi-brightness-high-fill me-2 navbar-btn"></i>
+                                        <i class="bi bi-brightness-high-fill me-2 navbar-btn" aria-hidden="true"></i>
                                         Light
                                     </button>
                                 </li>
                                 <li>
                                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                        <i class="bi bi-brightness-alt-high me-2 navbar-btn"></i>
+                                        <i class="bi bi-brightness-alt-high me-2 navbar-btn" aria-hidden="true"></i>
                                         Dark
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                                        <i class="bi bi-gear-fill me-2 navbar-btn"></i>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                        <i class="bi bi-gear-fill me-2 navbar-btn" aria-hidden="true"></i>
                                         Auto
                                     </button>
                                 </li>
@@ -106,12 +130,12 @@
 <div class="col-xs-12 col-md-12">
     
     
-    <p>Eva Chrenková from the Winkler Lab presented her work and beautiful multiplexed images at the ENBDC meeting in Weggis, Switzerland from 15. - 18. April 2026. It's such a privilege to see her hard work and dedication to this project get the recognition it deserves. It was a fantastic meeting bringing together the Breast Biology community of Europe! Thanks to the organizers for putting together such an incredible program.</p>
+    <p>Eva Chrenková from the Winkler Lab presented her work and beautiful multiplexed images at the ENBDC meeting in Weggis, Switzerland from 15. - 18. April 2026. It&#39;s such a privilege to see her hard work and dedication to this project get the recognition it deserves. It was a fantastic meeting bringing together the Breast Biology community of Europe! Thanks to the organizers for putting together such an incredible program.</p>
     
     
     
     <figure class="figure my-3">
-        <img src="/assets/img/2026-04-19-enbdc_eva_talk.webp" alt="Eva Chrenková presenting at ENBDC" class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="/assets/img/2026-04-19-enbdc_eva_talk.webp" alt="Eva Chrenková presenting at ENBDC" class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         
         <figcaption class="figure-caption">Eva Chrenková presenting at ENBDC</figcaption>
         
@@ -120,9 +144,9 @@
     
     
     <figure class="figure my-3">
-        <img src="/assets/img/2026-04-19-enbdc_eva_poster.webp" alt="Eva's ENBDC poster" class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="/assets/img/2026-04-19-enbdc_eva_poster.webp" alt="Eva&#39;s ENBDC poster" class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         
-        <figcaption class="figure-caption">Eva's ENBDC poster</figcaption>
+        <figcaption class="figure-caption">Eva&#39;s ENBDC poster</figcaption>
         
     </figure>
     

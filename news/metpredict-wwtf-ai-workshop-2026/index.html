@@ -1,23 +1,47 @@
 
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>METPredict presented at the WWTF AI/ML grantee workshop - MetPredict</title>
-        <meta name="description" content="" />
-        <meta name="author" content="André Rendeiro" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MetPredict presented at the WWTF AI/ML grantee workshop - MetPredict</title>
+        <meta name="description" content="Juliane Winkler presented MetPredict at the WWTF &#34;Understanding biology with AI/ML&#34; grantee workshop in Vienna." />
+        <meta name="author" content="André Rendeiro" />
+        <link rel="canonical" href="https://metpredict.at/news/metpredict-wwtf-ai-workshop-2026/" />
+
+        <meta property="og:site_name" content="MetPredict" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="MetPredict presented at the WWTF AI/ML grantee workshop" />
+        <meta property="og:description" content="Juliane Winkler presented MetPredict at the WWTF &#34;Understanding biology with AI/ML&#34; grantee workshop in Vienna." />
+        <meta property="og:url" content="https://metpredict.at/news/metpredict-wwtf-ai-workshop-2026/" />
+        <meta property="og:image" content="https://metpredict.at/assets/img/2026-10-06-wwtf_ai_workshop_juliane_talk.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+        <script>
+            // Set the color theme before first paint to avoid a flash of the wrong theme
+            (() => {
+                let stored = null;
+                try { stored = localStorage.getItem("theme"); } catch (e) {}
+                const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                const theme = stored === "light" || stored === "dark" ? stored : dark ? "dark" : "light";
+                document.documentElement.setAttribute("data-bs-theme", theme);
+            })();
+        </script>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet" />
-        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/rendeirolab/metpredict-website@main/assets/favicon.ico" />
-        <link rel="canonical" href="https://metpredict.at/news/metpredict-wwtf-ai-workshop-2026/" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rendeirolab/metpredict-website@main/assets/css/style.css" />
 
         
+        <meta property="article:published_time" content="2026-10-06" />
+
     </head>
 
     <body>
@@ -53,25 +77,25 @@
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-highlights me-2 navbar-btn"></i>Theme
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme (auto)">
+                                <i class="bi bi-highlights me-2 navbar-btn" aria-hidden="true"></i><span id="bd-theme-text">Theme</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                                        <i class="bi bi-brightness-high-fill me-2 navbar-btn"></i>
+                                        <i class="bi bi-brightness-high-fill me-2 navbar-btn" aria-hidden="true"></i>
                                         Light
                                     </button>
                                 </li>
                                 <li>
                                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                        <i class="bi bi-brightness-alt-high me-2 navbar-btn"></i>
+                                        <i class="bi bi-brightness-alt-high me-2 navbar-btn" aria-hidden="true"></i>
                                         Dark
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                                        <i class="bi bi-gear-fill me-2 navbar-btn"></i>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                        <i class="bi bi-gear-fill me-2 navbar-btn" aria-hidden="true"></i>
                                         Auto
                                     </button>
                                 </li>
@@ -98,7 +122,7 @@
                 
 <div class="col-xs-12 col-md-12">
     <p><a href="/news/">&larr; Back to News</a></p>
-    <h2>METPredict presented at the WWTF AI/ML grantee workshop</h2>
+    <h2>MetPredict presented at the WWTF AI/ML grantee workshop</h2>
     <small class="text-muted">2026-10-06</small>
     <hr />
 </div>
@@ -106,25 +130,25 @@
 <div class="col-xs-12 col-md-12">
     
     
-    <p>The METPredict team took part in the workshop for grantees of the WWTF "Understanding biology with AI/ML" call, held at the Impact Hub Vienna. The workshop marks the midpoint of the four-year METPredict project. Juliane Winkler presented METPredict and our goal of discovering the cellular and microanatomical determinants of breast cancer metastasis across scales, from single cells to whole tissues.</p>
+    <p>The MetPredict team took part in the workshop for grantees of the WWTF &#34;Understanding biology with AI/ML&#34; call, held at the Impact Hub Vienna. The workshop marks the midpoint of the four-year MetPredict project. Juliane Winkler presented MetPredict and our goal of discovering the cellular and microanatomical determinants of breast cancer metastasis across scales, from single cells to whole tissues.</p>
     
     
     
     <figure class="figure my-3">
-        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_juliane_talk.webp" alt="Juliane Winkler presenting the METPredict project in front of screens showing a multiplexed image of breast cancer tissue." class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_juliane_talk.webp" alt="Juliane Winkler presenting the MetPredict project in front of screens showing a multiplexed image of breast cancer tissue." class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         
-        <figcaption class="figure-caption">Juliane Winkler presenting METPredict.</figcaption>
+        <figcaption class="figure-caption">Juliane Winkler presenting MetPredict.</figcaption>
         
     </figure>
     
     
     
-    <p>Eva Chrenková, Fatemeh Ahmadi, Yimin Zheng and André Rendeiro also joined the workshop, where the funded teams shared their projects, offers and asks. The panel discussions touched on questions at the heart of METPredict: how to make sure that models capture biology rather than technical artefacts of the platform or protocol, and how to build models whose predictions we can trust.</p>
+    <p>Eva Chrenková, Fatemeh Ahmadi, Yimin Zheng and André Rendeiro also joined the workshop, where the funded teams shared their projects, offers and asks. The panel discussions touched on questions at the heart of MetPredict: how to make sure that models capture biology rather than technical artefacts of the platform or protocol, and how to build models whose predictions we can trust.</p>
     
     
     
     <figure class="figure my-3">
-        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_panel.webp" alt="Panel of researchers seated in front of a screen showing "Topic 1 - Biology, not (technical) artefacts: getting clean signal into the model"." class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_panel.webp" alt="Panel of researchers seated in front of a screen showing &#34;Topic 1 - Biology, not (technical) artefacts: getting clean signal into the model&#34;." class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         
         <figcaption class="figure-caption">Panel discussion on getting clean biological signal into models.</figcaption>
         
@@ -133,9 +157,9 @@
     
     
     <figure class="figure my-3">
-        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_room.webp" alt="Workshop participants seated around tables listening to a panel discussion while notes are taken on a flipchart." class="figure-img rounded" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
+        <img src="/assets/img/2026-10-06-wwtf_ai_workshop_room.webp" alt="Workshop participants seated around tables listening to a panel discussion while notes are taken on a flipchart." class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />
         
-        <figcaption class="figure-caption">Grantees of the WWTF "Understanding biology with AI/ML" call at the Impact Hub Vienna.</figcaption>
+        <figcaption class="figure-caption">Grantees of the WWTF &#34;Understanding biology with AI/ML&#34; call at the Impact Hub Vienna.</figcaption>
         
     </figure>
     
