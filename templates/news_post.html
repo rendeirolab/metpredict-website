@@ -17,7 +17,7 @@
 <div class="col-xs-12 col-md-12">
     {% for block in body %}
     {% if block.type == "text" %}
-    <p>{{ block.content }}</p>
+    <p>{{ block.content | urlize }}</p>
     {% elif block.type == "image" %}
     <figure class="figure my-3">
         <img src="{{ block.url | asset_url }}" alt="{{ block.alt }}" class="figure-img img-fluid rounded" style="max-height: 700px; width: auto;" />

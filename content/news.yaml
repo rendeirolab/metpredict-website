@@ -2,6 +2,20 @@ news:
   title: "News"
   description: "Latest updates from the MetPredict project."
   posts:
+    - slug: "eva-oegmbt-febs-2026"
+      title: "Eva presents at the ÖGMBT/FEBS Annual Meeting"
+      date: "2026-10-15"
+      summary: "Eva Chrenková presented our research on metastasis-specific myeloid programs in lung metastasis at the ÖGMBT/FEBS Annual Meeting in Vienna."
+      body:
+        - type: text
+          content: "Eva Chrenková presented our research on the characterization of metastasis-specific myeloid programs in lung metastasis at the Austrian Association of Molecular Life Sciences and Biotechnology (ÖGMBT)/FEBS Annual Meeting in Vienna on 17 September 2026."
+        - type: image
+          url: "/assets/img/2026-10-15-oegmbt_febs_eva_talk.webp"
+          alt: "Eva Chrenková presenting a slide titled \"Specific monocytes have pro- and anti-metastatic phenotypes\" in a lecture hall."
+          caption: "Eva Chrenková presenting at the ÖGMBT/FEBS Annual Meeting 2026."
+        - type: text
+          content: "To learn more about our study, you can find the preprint here: https://doi.org/10.64898/2026.03.27.714678"
+
     - slug: "metpredict-wwtf-ai-workshop-2026"
       title: "MetPredict presented at the WWTF AI/ML grantee workshop"
       date: "2026-10-06"
