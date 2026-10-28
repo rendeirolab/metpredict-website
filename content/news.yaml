@@ -2,6 +2,20 @@ news:
   title: "News"
   description: "Latest updates from the MetPredict project."
   posts:
+    - slug: "eva-fwf-esprit-fellowship"
+      title: "Eva awarded an FWF ESPRIT Fellowship"
+      date: "2026-10-28"
+      summary: "Eva Chrenková has been awarded an FWF ESPRIT Fellowship to investigate the biological mechanisms that drive breast cancer metastasis."
+      body:
+        - type: text
+          content: "We are delighted to share that Eva Chrenková has been awarded an FWF ESPRIT Fellowship to support her research at the Center for Cancer Research at the Medical University of Vienna. Over the next three years, Eva will investigate the biological mechanisms that drive breast cancer metastasis."
+        - type: image
+          url: "/assets/img/2026-06-10-eacr2026_eva.webp"
+          alt: "Eva Chrenková at EACR 2026"
+          caption: "Eva Chrenková at EACR 2026."
+        - type: text
+          content: "\"I am very grateful to my mentor Dr. Juliane Winkler, our collaborators, and our amazing Winkler lab team for their continuous support!\" says Eva. Congratulations, Eva!"
+
     - slug: "eva-oegmbt-febs-2026"
       title: "Eva presents at the ÖGMBT/FEBS Annual Meeting"
       date: "2026-10-15"
